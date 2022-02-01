@@ -57,3 +57,17 @@
  #time {
    display: none;
 }
+
+.ui-dialog
+{
+   height: 100px;
+   width: 100px;
+   background-color: white;
+}
+
+.ui-dialog .ui-dialog-titlebar 
+{
+   height: 20px;
+   width: 100px;
+   background-color: black;
+}

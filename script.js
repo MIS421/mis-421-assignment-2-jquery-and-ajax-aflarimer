@@ -1,6 +1,21 @@
 var len;
 var results = '';
 
+  $(function() {
+    // this initializes the dialog (and uses some common options that I do)
+    $("#time").dialog({
+      autoOpen : false
+      // modal : true
+      // show : "blind", hide : "blind"
+    });
+  
+    // next add the onclick handler
+    $("#timeButton").click(function() {
+      $("#time").dialog("open");
+      return false;
+    });
+  });
+
 function changeBackground() {
 
   var images = ['./images/daniel-sessler-7YEB0RV6Qgw-unsplash.jpg','./images/nick-fewings-0bnjNA7PNp4-unsplash.jpg','./images/patrick-tomasso-5hvn-2WW6rY-unsplash.jpg','./images/tim-gouw-UU7H4SOwEho-unsplash.jpg'];
