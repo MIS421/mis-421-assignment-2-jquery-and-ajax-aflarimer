@@ -1,6 +1,12 @@
 var len;
 var results = '';
 
+function changeBackground() {
+
+  var images = ['./images/daniel-sessler-7YEB0RV6Qgw-unsplash.jpg','./images/nick-fewings-0bnjNA7PNp4-unsplash.jpg','./images/patrick-tomasso-5hvn-2WW6rY-unsplash.jpg','./images/tim-gouw-UU7H4SOwEho-unsplash.jpg'];
+  document.body.style.backgroundImage = "url(" + images[Math.floor(Math.random() * images.length)] + ")";
+}
+
 function handleOnSearch() {
   apiSearch();
 }
