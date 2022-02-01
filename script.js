@@ -2,12 +2,9 @@ var len;
 var results = '';
 
   $(function() {
-    // this initializes the dialog (and uses some common options that I do)
     $("#time").dialog({
       autoOpen : false
     });
-  
-    // next add the onclick handler
     $("#timeButton").click(function() {
       var today = new Date();
       document.getElementById("currTime").innerHTML = today.getHours() + ":" + today.getMinutes();
